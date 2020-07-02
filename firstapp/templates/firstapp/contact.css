@@ -1,0 +1,59 @@
+img{
+  height: 200px;
+  width: 100%;
+}
+#map{
+  height:400px;
+  width:500px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+iframe{
+  float: left;
+    margin: 40px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: white;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: white;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-radius: 30px;
+padding: 10px;
+}
+body{
+  background-color: black;
+}
+#three{
+  color: white;
+  text-indent: 30px;
+}
+h2{
+padding-bottom: 20px;
+}
+i{
+  padding-right: 20px;
+}
+h3{
+  padding-bottom: 50px;
+  color:white;
+}
+p{
+  padding: 30px;
+  color: white;
+  font-size: 16px;
+}
+h1{
+  padding-bottom: 35px;
+}
+.button{
+  margin: auto;
+  display: block;
+}

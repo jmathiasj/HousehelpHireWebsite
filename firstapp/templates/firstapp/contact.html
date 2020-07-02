@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style media="screen">
+img{
+  height: 200px;
+  width: 100%;
+}
+
+#map{
+  height:400px;
+  width:500px;
+}
+*{
+  margin = 0;
+  padding = 0;
+}
+iframe{
+  float: left;
+margin: 40px;
+border: 2px solid white;
+border-radius: 30px;
+padding: 10px;
+
+}
+body{
+  background-color: black;
+}
+#three{
+  color: white;
+  text-indent: 30px;
+}
+h2{
+padding-bottom: 20px;
+}
+i{
+  padding-right: 20px;
+}
+h3{
+  padding-bottom: 50px;
+}
+p{
+  padding: 30px;
+  color: white;
+  font-size: 16px;
+}
+h1{
+  padding-bottom: 35px;
+}
+.button{
+  margin: auto;
+  display: block;
+}
+</style>
+
+  </head>
+  <body>
+
+     <div class="">
+         <img src="http://www.eros-group.com/images/banner-contact.jpg">
+     </div>
+     <section>
+       <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Fr.%20Agnel%20Ashram%2C%20BandStand%2C%20Bandra%20(W)%2C%20Mount%20Mary%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050&key=AIzaSyBMhPDK56wWWUA9j6LZlhaX2ma6sPjJZvk" allowfullscreen></iframe>
+     </section>
+     <div class="" id="three">
+       <h2>Contact Us at :</h2>
+       <h3><i class="fa fa-envelope-open"></i>mim@gmail.com</h3>
+       <h3><i class="fa fa-phone-square" style="font-size:30px"></i>022-28262784 / 91-9987511962</h3>
+       <h1><a href="#" class="fa fa-facebook"></a>
+           <a href="#" class="fa fa-twitter"></a>
+           <a href="#" class="fa fa-linkedin"></a></h1>
+     </div>
+
+     <section>
+       <p>At MaidInMumbai, we believe in the best customer service and have established a
+       good relationships with all our customers, making their needs our priority.
+       With just under three years of being in the service industry, MaidInMumbai has made
+       a name in the Hospitality industry and made a place in every customer's heart.
+       Get in touch with us for the best Services and a very comfortable customer experience!
+
+       </p>
+     </section>
+  <button class="button"><a href="{% url 'firstapp:first' %}">Back to Home Page</a></button>
+
+  </body>
+</html>

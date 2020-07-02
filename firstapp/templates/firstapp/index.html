@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%  load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/index.css"%}"/>
+</head>
+<body>
+
+    <div class="container">
+    <div class="jumbotron">
+          <h1>Hi,welcome</h1>
+        <h2>These are the ladies available</h2>
+    </div>
+    </div>
+    <div class="djangtwo">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>Area Name</th>
+                <th>Name of maid</th>
+                <th>Type of Work</th>
+                <th>Phone Number</th>
+            </thead>
+
+    {%  for acc in access_records %}
+        {% for fcc in field_records %}
+            {%  if fcc.field == acc.work  and fcc.area == acc.area   %}
+                <tr>
+                    <td>{{ acc.area }}</td>
+                    <td>{{ acc.name }}</td>
+                    <td>{{ acc.work }}</td>
+                    <td>{{ acc.number }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+        </table>
+    {% else %}
+        <p>NO ACCESS RECORDS</p>
+        {% endif %}
+
+    </div>
+    <a href="{%  url 'admin:index' %}"><input type="submit" class='btn btn-primary' value="Next"></a>
+</body>
+</html>

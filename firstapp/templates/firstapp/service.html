@@ -1,0 +1,150 @@
+<html>
+<head>
+  <style>
+  h1{
+    text-align: center;
+    font-family: sans-serif;
+  margin-top: 50px;
+  font-size: 100 px;
+  }
+
+  body
+    {
+      background-image: url("http://stream.aljazeera.com/sites/default/files/styles/fb_og_image/public/1446574968-Book%20my%20bai.png?itok=KRdVsMM ");
+    }
+
+h1{
+  align-self: center;
+  font-size: 50px;
+  text-decoration-color:#f5de9f;
+}
+nav{
+  margin-top:20px;
+height: 50px;
+  background-color:black ;
+  height:70px;
+  opacity:1;
+  color:#f5de9f;
+  font-family: "Cooper black";
+  text-shadow
+}
+.cleaning :hover{
+  background-size:360px
+}
+.overlay{
+  position:absolute;
+  transition:all .3s easing;
+  opacity:0;
+  background-color: grey;
+
+}
+input
+{
+    margin-left: auto;
+    margin-top: auto;
+  margin-right: auto;
+  align-self: center;
+
+}
+.text{
+  color:white;
+  font-family: sans-serif;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size: 20px;
+
+}
+.overlayleft{
+  height:100%;
+  width:0;
+  top:0;
+  left:0;
+  background-color: grey;
+
+}
+.cleaning:hover .overlayleft{
+  width:100%;
+  opacity:0.7;
+}
+ #clean{
+margin-right: 10px;
+margin-left: 10px;
+margin-top: 10px;
+float:left;
+  text-align: justify;
+  margin-bottom: 10px;
+
+}
+div  #cook{
+margin-right: 10px;
+margin-left: 10px;
+margin-top: 10px;
+  float:left;
+  text-align: justify;
+  margin-bottom: 10px;
+  border-width: thin;
+}
+div  #babysit{
+margin-left: 10px;
+margin-right:10px;
+margin-top: 10px;
+  float:left;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+div  #elder{
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+  float:left;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+div.box{
+  background-color: #f5de9f;
+}
+.button{
+    size:200px;
+    margin-left: 360px;
+    height:100px;
+    width:200px;
+
+}
+  </style>
+</head>
+<body>
+  <div>
+<div class="section">
+            <div class="global">
+              <nav>
+              <h1>WHAT WE OFFER YOU?</h1>
+              </nav>
+        <div class="box" style="position:relative;  margin-top: 10px; margin-left: 150px; margin-bottom: 50px; width:60%; float:left; border:3px solid black;">
+
+         <div id="main" class="panel_l post">
+<div class="cleaning" id="clean">
+                <input type="image" onclick="services.html" width="400" height="400" src="http://www.absolutecleaning.com.sg/images/where-can-i-find-office-cleaner2.jpg"></input>
+<div class="overlay overlayleft"><div class="text"><a href="{% url 'firstapp:form_name' %}">CLICK TO GET MAID FOR CLEANING</a></div></div>
+</div>
+<div class="cleaning" id="cook">
+    <input type="image" onclick="form_page.html" width="400" height="400" src="https://thumbs.dreamstime.com/z/male-chef-cooking-28151356.jpg">
+<div class="overlay overlayleft"><div class="text"><a href="{% url 'firstapp:form_name' %}">CLICK TO GET MAID FOR COOKING</a></div></div>
+</div>
+<div class="cleaning" id="babysit">
+          <input type="image" value="Babysiting"  onclick="form_page.html" width="400" height="400"src="http://ohtopten.com/wp-content/uploads/2013/07/BabySitting.jpg"></input>
+<div class="overlay overlayleft"><div class="text"><a href="{% url 'firstapp:form_name' %}">CLICK TO GET MAID FOR BABYSITTING</a></div></div>
+</div>
+<div class="cleaning" id="elder">
+            <input type="image" value="ElderCare"  onclick="form_page.html" width="400" height="400" src="http://homepartnersllc.com/wp-content/uploads/2014/06/elder-care-services-wp.jpg"></input>
+<div class="overlay overlayleft"><a href="{% url 'firstapp:form_name' %}"><div class="text">CLICK HERE TO GET MAID FOR ELDERCARE</a></div></div>
+</div>
+        <form method="get" action="first.html">
+            <button class="button"><a href="{% url 'firstapp:first' %}">Back to Home Page</a></button>
+</form>
+        </div>
+        </div>
+<br />
+</body>
+</html>
